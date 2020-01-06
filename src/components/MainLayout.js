@@ -1,7 +1,6 @@
 import React from "react"
 
 import Header from "./Header"
-import Footer from "./Footer"
 
 const MainLayout = ({ children, className = "" }) => {
   let classNames = ["container", className].join(" ")
@@ -10,7 +9,6 @@ const MainLayout = ({ children, className = "" }) => {
     <>
       <Header />
       <div className={classNames}>{children}</div>
-      <Footer />
     </>
   )
 }

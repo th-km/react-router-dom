@@ -1,26 +1,26 @@
 import React from "react"
 import { Route, Switch } from "react-router-dom"
 
-import Home from "./containers/Home"
-import Contact from "./containers/Contact"
-import About from "./containers/About"
-import User from "./containers/User"
-import NotFound from "./containers/NotFound"
+import Contact from "./pages/Contact"
+import About from "./pages/About"
+import Project from "./pages/Project"
+import NotFound from "./pages/NotFound"
+import ProjectDetail from "./pages/ProjectDetail"
 
 function App() {
   return (
     <Switch>
       <Route exact path="/">
-        <Home />
+        <Project />
       </Route>
-      <Route path="/contact">
-        <Contact />
+      <Route path="/project/:projectId">
+        <ProjectDetail />
       </Route>
       <Route path="/about">
         <About />
       </Route>
-      <Route path="/user/:userId">
-        <User />
+      <Route path="/contact">
+        <Contact />
       </Route>
       <Route>
         <NotFound />
