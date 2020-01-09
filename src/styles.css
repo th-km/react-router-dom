@@ -79,6 +79,7 @@ button:hover {
   max-width: 65rem;
   display: flex;
   flex-wrap: wrap;
+  padding: 2.5rem
 }
 
 .project {
